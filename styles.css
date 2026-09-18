@@ -1,0 +1,88 @@
+body {
+  background: #e5ddd5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#output {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 60%;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 8px;
+  position: relative;
+  clear: both;
+}
+
+.message small {
+  display: block;
+  font-size: 0.7em;
+  color: #666;
+  text-align: right;
+  margin-top: 4px;
+}
+
+/* Sent messages (align right) */
+.sent {
+  background-color: #dcf8c6;
+  float: right;
+  text-align: left;
+}
+
+/* Received messages (align left) */
+.received {
+  background-color: #fff;
+  float: left;
+  text-align: left;
+}
+
+#input-area {
+  display: flex;
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+#messageInput {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+#sendButton {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #34b7f1;
+  color: white;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.bubble {
+  display: inline-block;
+  max-width: 70%;
+  background: #fff;
+  padding: 8px;
+  border-radius: 8px;
+}
